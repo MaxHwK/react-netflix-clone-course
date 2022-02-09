@@ -1,4 +1,6 @@
-# react-netflix-clone-course
+# React Netflix Clone Course
+
+## 🚀 Realized by GIRON Maxence
 
 ## Features
 
