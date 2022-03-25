@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { AppBar, Grid, Toolbar, Box, IconButton, Typography, styled, InputBase, alpha, Stack } from '@mui/material'
-import SearchIcon from '@mui/icons-material/Search';
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
     '& .MuiInputBase-input': {
@@ -14,16 +13,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
         padding: theme.spacing(1, 1, 1, 0), 
     },
     color: 'inherit'
-}));
-
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-    position: 'absolute',
-    display: 'flex',
-    height: '100%',
-    alignItems: 'center',
-    pointerEvents: 'none',
-    justifyContent: 'center',
-    padding: theme.spacing(0, 2)
 }));
 
 const Search = styled('div')(({ theme }) => ({
@@ -65,7 +54,7 @@ const NavbarCompleted = () => {
                         <Toolbar>
                             <Link to="/">
                                 <img src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"
-                                    width="160px" height="40px" alt="Netflix"/>
+                                    width="160px" height="35px" alt="Netflix"/>
                             </Link>
                             <Box sx={{ display: { md: 'flex', xs: 'none' } }} ml={10}>
                                 <Stack direction='row' spacing={3}>

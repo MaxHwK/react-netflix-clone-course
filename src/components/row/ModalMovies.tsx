@@ -15,12 +15,12 @@ interface MovieData {
     id: number
     name: string
     title: string
+    poster_path: string
     original_name: string
     original_title: string
     original_language: string
     first_air_date: Date
     popularity: number
-    sign_path: string
     vote_average: number
     backdrop_path: string
     overview?: string
@@ -74,10 +74,10 @@ const ModalMovies = ({ movieInfo }: PosterInfo) => {
 
     return (
         <div>
-            <img src={`https://image.tmdb.org/t/p/w500${movieInfo.sign_path}`} onClick={handleOpen} 
+            <img src={`https://image.tmdb.org/t/p/w500${movieInfo.poster_path}`} onClick={handleOpen} 
                 alt={movieInfo.name} className="row_sign"/>
 
-            <Modal open={open} onClose={handleClose} closeAfterTransition style={{ overflowY: 'scroll' }}
+            <Modal open={open} onClose={handleClose} closeAfterTransition style={{ overflowY: 'scroll', cursor: 'pointer', color: 'azure' }}
                 BackdropProps={{timeout: 480}} aria-describedby="trans_description"
                 aria-labelledby="transition-modal-title">
                 <Fade in={open}>
@@ -137,7 +137,7 @@ const ModalMovies = ({ movieInfo }: PosterInfo) => {
                                 <Stack my={2} ml={3} spacing={1} direction="row">
                                     <Stack direction="row">
                                         <Typography style={secondaryColor}> Note : &nbsp;</Typography>
-                                        <Typography style={principalColor}> {movieInfo?.vote_average ? movieInfo?.vote_average : "No data"} </Typography>
+                                        <Typography style={principalColor}> {movieInfo?.vote_average ? movieInfo?.vote_average : "No data"}/10 </Typography>
                                     </Stack>
                                 </Stack>
                             </Grid>

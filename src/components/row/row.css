@@ -4,7 +4,8 @@
 
 .row_signs::-webkit-scrollbar-track {
   border-radius: 8px;
-  background: rgb(31, 30, 30); 
+  background: rgb(31, 30, 30);
+  cursor: pointer;
 }
 
 .row_signs::-webkit-scrollbar {
@@ -14,11 +15,12 @@
   
 .row_signs::-webkit-scrollbar-thumb:hover {
   background: #ec0505; 
+  transform: scale(1.1);
 }
  
 .row_signs::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background: rgb(19, 18, 18);
+  background: rgb(207, 207, 207);
 }
 
 .row_signs {
