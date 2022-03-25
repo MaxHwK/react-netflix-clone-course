@@ -1,0 +1,42 @@
+.row {
+  margin-left: 25px;
+}
+
+.row_signs::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: rgb(31, 30, 30); 
+}
+
+.row_signs::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+  
+.row_signs::-webkit-scrollbar-thumb:hover {
+  background: #ec0505; 
+}
+ 
+.row_signs::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgb(19, 18, 18);
+}
+
+.row_signs {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  display: flex;
+  padding: 25px 25px 25px 0px;
+}
+
+.row_sign:hover {
+  transform: scale(1.1);
+}
+
+.row_sign {
+  transition: transform .45s;
+  cursor: pointer;
+  object-fit: contain;
+  margin-right: 15px;
+  max-height: 280px;
+}
