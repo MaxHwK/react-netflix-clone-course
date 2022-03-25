@@ -65,7 +65,7 @@ const NavbarCompleted = () => {
                         <Toolbar>
                             <Link to="/">
                                 <img src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"
-                                    width="180px" height="50px" alt="Netflix"/>
+                                    width="160px" height="40px" alt="Netflix"/>
                             </Link>
                             <Box sx={{ display: { md: 'flex', xs: 'none' } }} ml={10}>
                                 <Stack direction='row' spacing={3}>
@@ -92,10 +92,7 @@ const NavbarCompleted = () => {
                         <Box sx={{ flexGrow: 1 }} />
                         <Search>
                             <Link to="../search">
-                                <SearchIconWrapper>
-                                    <SearchIcon />
-                                </SearchIconWrapper>
-                                <StyledInputBase inputProps={{ 'aria-label': 'search' }} placeholder="Search something"/>
+                                <StyledInputBase inputProps={{ 'aria-label': 'search' }} placeholder="&nbsp; Search something ..."/>
                             </Link>
                         </Search>
 
