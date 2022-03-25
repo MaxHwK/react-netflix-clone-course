@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { AppBar, Grid, Select, Toolbar, MenuItem, Button, } from '@mui/material'
 
+import "./navbar.css";
+
 const principalStyle = {
   position: 'absolute',
   backgroundColor: 'transparent',
@@ -34,7 +36,7 @@ const Navbar = () => {
             </Grid>
 
             <Grid item xs="auto">
-              <Select sx={secondaryStyle} variant="outlined" defaultValue="EN" name="lang" size="small">
+              <Select sx={secondaryStyle} className="switch_lang" variant="outlined" defaultValue="EN" name="lang" size="small">
                 <MenuItem value="EN">English</MenuItem>
                 <MenuItem value="FR">Français</MenuItem>
               </Select>
