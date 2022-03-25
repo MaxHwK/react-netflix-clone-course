@@ -48,7 +48,7 @@ const secondaryColor = {
 
 const StyleGrid = {
     height: '46vh',
-    width: '60.5vw',
+    width: '59vw',
     position: 'relative',
     background: 'linear-gradient( to bottom, rgba(255, 38, 38, 0) 0, rgba(40, 40, 40, 0.78) 100% )'
 }
@@ -119,23 +119,25 @@ const ModalMovies = ({ movieInfo }: PosterInfo) => {
                             <Grid xs={6} item>
                                 <Stack my={2} ml={3} spacing={1} direction="row">
                                     <Typography style={secondaryColor}> Release date : </Typography>
-                                    <Typography style={principalColor}> {movieInfo?.first_air_date ? movieInfo?.first_air_date : "Unknown"} </Typography>
-                                    
+                                    <Typography style={principalColor}> {movieInfo?.first_air_date ? movieInfo?.first_air_date : "No data"} </Typography>
+                                </Stack>
+
+                                <Stack my={2} ml={3} spacing={1} direction="row">
                                     <Typography style={secondaryColor}> Popularity : </Typography>
-                                    <Typography style={principalColor}> {movieInfo?.popularity ? movieInfo?.popularity : "Unknown"} </Typography>  
+                                    <Typography style={principalColor}> {movieInfo?.popularity ? movieInfo?.popularity : "No data"} views</Typography>  
                                 </Stack>
                             </Grid>
 
                             <Grid xs={6} item>
                                 <Stack my={2} ml={3}  spacing={1} direction="row">
-                                    <Typography style={secondaryColor}>Original language : </Typography>
-                                    <Typography style={principalColor}> {movieInfo?.original_language ? movieInfo?.original_language : "Unknown"} </Typography>
+                                    <Typography style={secondaryColor}>VO language : </Typography>
+                                    <Typography style={principalColor}> {movieInfo?.original_language ? movieInfo?.original_language : "No data"} </Typography>
                                 </Stack>
 
                                 <Stack my={2} ml={3} spacing={1} direction="row">
                                     <Stack direction="row">
-                                        <Typography style={secondaryColor}> Average rating : </Typography>
-                                        <Typography style={principalColor}> {movieInfo?.vote_average ? movieInfo?.vote_average : "Unknown"}/10 </Typography>
+                                        <Typography style={secondaryColor}> Note : &nbsp;</Typography>
+                                        <Typography style={principalColor}> {movieInfo?.vote_average ? movieInfo?.vote_average : "No data"} </Typography>
                                     </Stack>
                                 </Stack>
                             </Grid>
