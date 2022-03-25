@@ -18,12 +18,12 @@ interface MovieData {
     original_name: string
     original_title: string
     original_language: string
+    first_air_date: Date
     popularity: number
     sign_path: string
+    vote_average: number
     backdrop_path: string
     overview?: string
-    first_air_date: Date
-    vote_average: number
 }
 
 const principalStyle = {

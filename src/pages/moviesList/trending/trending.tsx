@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Avatar, Box, Button, Grid, Stack, Typography } from '@mui/material'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Info from '@mui/icons-material/Info';
-import VolumeUpOutlinedIcon from '@mui/icons-material/VolumeUpOutlined';
 
 import axios from "../../../requests/Axios";
 import Requests from '../../../requests/Requests';
